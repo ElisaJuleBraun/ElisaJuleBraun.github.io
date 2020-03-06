@@ -1,0 +1,1197 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- main a-frame library -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <!-- physics library -->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- particle system library -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- environment library -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- text geometry library -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <!-- extras library -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+<a-asset-item id="face-obj" src="models/meModel.obj"></a-asset-item>
+</a-assets>
+
+<a-entity id="sound1" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-150 -150 -150" sound="src: url(tracks/1.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: 150 150 150;
+                dur: 5000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound2" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-100 -100 -1" sound="src: url(tracks/2.mwav); autoplay: true; loop: true" animation= "property: position;
+                to: 100 100 100;
+                dur: 8000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound3" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="40 300 -70" sound="src: url(tracks/3.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: -40 -300 70;
+                dur: 5000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound4" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-70 -50 -80" sound="src: url(tracks/4.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: 70 100 80;
+                dur: 20000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound5" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="200 -200 90" sound="src: url(tracks/5.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: -80 200 -90;
+                dur: 100000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound6" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-150 -150 -150" sound="src: url(tracks/6.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: 200 200 200;
+                dur: 10000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound7" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-60 100 50" sound="src: url(tracks/7.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: 60 -100 -50;
+                dur: 15000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound8" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="100 -400 250" sound="src: url(tracks/8.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: -100 400 -250;
+                dur: 50000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound9" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-500 350 -200" sound="src: url(tracks/9.wav); autoplay: true; loop: true" animation= "property: position;
+                to: 80 -350 200;
+                dur: 25000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound10" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="80 200 200" sound="src: url(tracks/10.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: -80 -200 -200;
+                dur: 9000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound11" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="-400 -400 400" sound="src: url(tracks/11.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: 400 400 -400;
+                dur: 75000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+<a-entity id="sound12" geometry="primitive: plane" material="color: yellow; transparent: true; opacity: 0.0"
+          position="400 250 100" sound="src: url(tracks/12.mp3); autoplay: true; loop: true" animation= "property: position;
+                to: -400 -250 -100;
+                dur: 8000;
+                easing: linear;
+                loop: true;"></a-entity>
+
+
+
+  <a-text
+  value=""
+  size ="50px"
+  color="yellow"
+  position="0 2.5 -2"
+  animation="property: rotation;
+               to: 360 360 360;
+               dur: 15000;
+               easing: linear;
+               loop: true;"
+</a-text>
+
+<a-text
+value=""
+size ="50px"
+color="yellow"
+position="0 2.5 -4"
+animation="property: rotation;
+             to: 180 360 90;
+             dur: 18000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="#dawnofeurope"
+size ="50px"
+color="yellow"
+position="1 2.5 -4"
+animation="property: rotation;
+             to: 30 300 45;
+             dur: 3000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="ta-taz-target"
+size ="50px"
+color="yellow"
+position="5 2.5 -4"
+animation="property: rotation;
+             to: 15 0 360;
+             dur: 30000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="syntax"
+size ="50px"
+color="yellow"
+position="3 1 -2"
+animation="property: rotation;
+             to: 90 10 180;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="merken"
+size ="50px"
+color="yellow"
+position="-3 2 -2"
+animation="property: rotation;
+             to: 45 45 45;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="telepresence"
+size ="50px"
+color="yellow"
+position="-5 1.5 -2"
+animation="property: rotation;
+             to: 90 90 90;
+             dur: 8000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="02/01/20 8:28"
+size ="50px"
+color="yellow"
+position="-2 2.5 2"
+animation="property: rotation;
+             to: 75 280 90;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="lunar"
+size ="50px"
+color="yellow"
+position="-2 1.5 0"
+animation="property: rotation;
+             to: 175 200 30;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="more avocad"
+size ="50px"
+color="yellow"
+position="0 1.5 0"
+animation="property: rotation;
+             to: 175 200 30;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="permeability"
+size ="50px"
+color="yellow"
+position="1 3 -1"
+animation="property: rotation;
+             to: 100 200 30;
+             dur: 3000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+
+<a-text
+value="on time"
+size ="50px"
+color="yellow"
+position="1 2 -6"
+animation="property: rotation;
+             to: 100 200 30;
+             dur: 2000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="NETFLIX"
+size ="50px"
+color="yellow"
+position="0 1 -1"
+animation="property: rotation;
+             to: 45 360 360;
+             dur: 4000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="-8 1 -1"
+animation="property: rotation;
+             to: 20 280 180;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="go here often?"
+size ="50px"
+color="yellow"
+position="3 2 -1"
+animation="property: rotation;
+             to: 180 50 70;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="ALL THIS ONLY A HOP AWAY WITH A QUANTAS"
+size ="50px"
+color="yellow"
+position="10 -2 3"
+animation="property: rotation;
+             to: 50 300 100;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="-10 -5 3"
+animation="property: rotation;
+             to: 100 300 100;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="spacious"
+size ="50px"
+color="yellow"
+position="10 5 2"
+animation="property: rotation;
+             to: 80 200 60;
+             dur: 4000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="fluessig"
+size ="50px"
+color="yellow"
+position="-4 -2 2"
+animation="property: rotation;
+             to: 55 200 30;
+             dur: 14000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="vernetzen"
+size ="50px"
+color="yellow"
+position="4 -1 2"
+animation="property: rotation;
+             to: 200 20 300;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="zweistrahlig"
+size ="50px"
+color="yellow"
+position="1 1 1"
+animation="property: rotation;
+             to: 300 300 300;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Tic-Tac-Toe"
+size ="50px"
+color="yellow"
+position="-3 -3 -3"
+animation="property: rotation;
+             to: 90 90 360;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="deposit"
+size ="50px"
+color="yellow"
+position="4 -4 -10"
+animation="property: rotation;
+             to: 360 0 90;
+             dur: 3000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="jir6307@gmail.com"
+size ="50px"
+color="yellow"
+position="-1 2 -6"
+animation="property: rotation;
+             to: 360 50 70;
+             dur: 30000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="updates"
+size ="50px"
+color="yellow"
+position="-4 3 -8"
+animation="property: rotation;
+             to: 360 50 70;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="VR-NetKey oder Alias"
+size ="50px"
+color="yellow"
+position="-2 3 -4"
+animation="property: rotation;
+             to: 360 0 70;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="the best"
+size ="50px"
+color="yellow"
+position="2 1.5 -2.5"
+animation="property: rotation;
+             to: 90 30 360;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="polygonal objects"
+size ="50px"
+color="yellow"
+position="2 0.5 -3.5"
+animation="property: rotation;
+             to: 300 300 180;
+             dur: 7000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Beyoynd Zoocentrism"
+size ="50px"
+color="yellow"
+position="-7 1.5 2.5"
+animation="property: rotation;
+             to: 90 300 360;
+             dur: 3000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="N Clark St"
+size ="50px"
+color="yellow"
+position="-3 5 4.5"
+animation="property: rotation;
+             to: 40 200 170;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="-5 -5 -4.5"
+animation="property: rotation;
+             to: 150 330 200;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="ein zu viel"
+size ="50px"
+color="yellow"
+position="2.5 -3 -1"
+animation="property: rotation;
+             to: 90 100 80;
+             dur: 8000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Datenschutzrichtlinie"
+size ="50px"
+color="yellow"
+position="10 3 53"
+animation="property: rotation;
+             to: 110 360 8;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="END USER LICENCE AGREEMENT"
+size ="50px"
+color="yellow"
+position="8 2 1"
+animation="property: rotation;
+             to: 180 90 45;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="FLASH.FLAWLESS."
+size ="50px"
+color="yellow"
+position="3 -2 8"
+animation="property: rotation;
+             to: 180 90 45;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Hinter vielen Zeitungen steht ein Konzern."
+size ="50px"
+color="yellow"
+position="-6 -6 -6"
+animation="property: rotation;
+             to: 45 45 45;
+             dur: 8000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Connect"
+size ="50px"
+color="yellow"
+position="-1.5 -1.5 -1.5"
+animation="property: rotation;
+             to: 90 90 360;
+             dur: 18000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Latest"
+size ="50px"
+color="yellow"
+position="-3.5 -4.5 -5.5"
+animation="property: rotation;
+             to: 360 90 50;
+             dur: 9000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+
+<a-text
+value="NEW IN"
+size ="50px"
+color="yellow"
+position="-0.5 0.5 -10"
+animation="property: rotation;
+             to: 300 70 170;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="%"
+size ="50px"
+color="yellow"
+position="-6 -1 7"
+animation="property: rotation;
+             to: 50 170 360;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Seitentransparenz"
+size ="50px"
+color="yellow"
+position="10 7 9"
+animation="property: rotation;
+             to: 300 100 170;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="CY-!20877"
+size ="50px"
+color="yellow"
+position="5 -4 5"
+animation="property: rotation;
+             to: 200 200 270;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Datenschutzrichtlinie"
+size ="50px"
+color="yellow"
+position="3 3 -3"
+animation="property: rotation;
+             to: 200 100 300;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Cows and flies"
+size ="50px"
+color="yellow"
+position="-10 10 10"
+animation="property: rotation;
+             to: 100 200 300;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Ferne Destinationen"
+size ="50px"
+color="yellow"
+position="4 -4 -4"
+animation="property: rotation;
+             to: 300 200 100;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="CAMRY"
+size ="50px"
+color="yellow"
+position="5 5 -5"
+animation="property: rotation;
+             to: 40 150 300;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="affordable rides on"
+size ="50px"
+color="yellow"
+position="-2 5 -2"
+animation="property: rotation;
+             to: 300 150 300;
+             dur: 25000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Man Vs. Missiles: Combat"
+size ="50px"
+color="yellow"
+position="2 5 2"
+animation="property: rotation;
+             to: 300 150 300;
+             dur: 18000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Ready to earn?"
+size ="50px"
+color="yellow"
+position="1 -5 -2"
+animation="property: rotation;
+             to: 200 150 300;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Enter"
+size ="50px"
+color="yellow"
+position="-1 5 2"
+animation="property: rotation;
+             to: 250 70 30;
+             dur: 7000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Enter"
+size ="50px"
+color="yellow"
+position="-10 10 10"
+animation="property: rotation;
+             to: 250 70 30;
+             dur: 7000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="2 5 -10"
+animation="property: rotation;
+             to: 70 170 230;
+             dur: 22000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Processing"
+size ="50px"
+color="yellow"
+position="-3 3 -10"
+animation="property: rotation;
+             to: 70 170 230;
+             dur: 22000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Authorizing will redirect"
+size ="50px"
+color="yellow"
+position="-3 -1 -5"
+animation="property: rotation;
+             to: 210 110 230;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="CANCEL"
+size ="50px"
+color="yellow"
+position="2 3 4"
+animation="property: rotation;
+             to: 210 110 230;
+             dur: 6000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="CANCEL"
+size ="50px"
+color="yellow"
+position="12 3 4"
+animation="property: rotation;
+             to: 120 310 80;
+             dur: 16000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="LOOPS"
+size ="50px"
+color="yellow"
+position="5 15 2"
+animation="property: rotation;
+             to: 300 310 280;
+             dur: 19000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="ABLEHNEN"
+size ="50px"
+color="yellow"
+position="-2 -5 -15"
+animation="property: rotation;
+             to: 200 210 180;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="ABLEHNEN"
+size ="50px"
+color="yellow"
+position="3 13 3"
+animation="property: rotation;
+             to: 70 310 380;
+             dur: 16000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="depleted"
+size ="50px"
+color="yellow"
+position="13 3 3"
+animation="property: rotation;
+             to: 170 210 180;
+             dur: 23000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="-3 -13 -3"
+animation="property: rotation;
+             to: 270 110 280;
+             dur: 23000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="nihondedoitsujin"
+size ="50px"
+color="yellow"
+position="-5 -3 -35"
+animation="property: rotation;
+             to: 270 110 280;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="overbearing"
+size ="50px"
+color="yellow"
+position="5 3 35"
+animation="property: rotation;
+             to: 320 310 90;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="venture capitalist"
+size ="50px"
+color="yellow"
+position="5 -5 -10"
+animation="property: rotation;
+             to: 320 310 90;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Planungszwecke"
+size ="50px"
+color="yellow"
+position="-3 2 10"
+animation="property: rotation;
+             to: 200 100 290;
+             dur: 19000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Response recorded"
+size ="50px"
+color="yellow"
+position="-10 4 -10"
+animation="property: rotation;
+             to: 300 200 190;
+             dur: 8000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="reluctant"
+size ="50px"
+color="yellow"
+position="-4 10 -4"
+animation="property: rotation;
+             to: 100 200 300;
+             dur: 5000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="one more step"
+size ="50px"
+color="yellow"
+position="-5 5 1"
+animation="property: rotation;
+             to: 100 200 300;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="901-54956958"
+size ="50px"
+color="yellow"
+position="-1 15 5"
+animation="property: rotation;
+             to: 300 200 100;
+             dur: 18000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Data collection and use"
+size ="50px"
+color="yellow"
+position="10 -15 -5"
+animation="property: rotation;
+             to: 300 200 100;
+             dur: 7000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="1/28/20 9:00"
+size ="50px"
+color="yellow"
+position="-10 -5 -5"
+animation="property: rotation;
+             to: 200 100 300;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="#cloudy"
+size ="50px"
+color="yellow"
+position="-5 -5 5"
+animation="property: rotation;
+             to: 200 100 300;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="registration required"
+size ="50px"
+color="yellow"
+position="-12 -20 -12"
+animation="property: rotation;
+             to: 200 100 300;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Einstellungen ändern"
+size ="50px"
+color="yellow"
+position="-13 -13 -13"
+animation="property: rotation;
+             to: 50 100 80;
+             dur: 10000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Welcome!"
+size ="50px"
+color="yellow"
+position="13 13 13"
+animation="property: rotation;
+             to: 150 100 180;
+             dur: 11000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="#gunselfie"
+size ="50px"
+color="yellow"
+position="17 -17 17"
+animation="property: rotation;
+             to: 150 100 180;
+             dur: 11000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Ein Superorganismus von schleimiger Intelligenz"
+size ="50px"
+color="yellow"
+position="-17 17 -17"
+animation="property: rotation;
+             to: 150 300 50;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Erstattungsauftrag"
+size ="50px"
+color="yellow"
+position="17 -17 -17"
+animation="property: rotation;
+             to: 150 300 50;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="PRISMA"
+size ="50px"
+color="yellow"
+position="7 -2 -7"
+animation="property: rotation;
+             to: 300 200 150;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="neurotransmitter"
+size ="50px"
+color="yellow"
+position="-2 7 2"
+animation="property: rotation;
+             to: 300 200 150;
+             dur: 12000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Denkapparat"
+size ="50px"
+color="yellow"
+position="-7 3 7"
+animation="property: rotation;
+             to: 300 300 350;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="One-way"
+size ="50px"
+color="yellow"
+position="3 -7 17"
+animation="property: rotation;
+             to: 200 200 250;
+             dur: 20000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Propaganda"
+size ="50px"
+color="yellow"
+position="17 -7 17"
+animation="property: rotation;
+             to: 200 200 250;
+             dur: 23000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="<3"
+size ="50px"
+color="yellow"
+position="17 -3 18"
+animation="property: rotation;
+             to: 80 200 100;
+             dur: 25000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="gefaerliche Gegenden"
+size ="50px"
+color="yellow"
+position="-7 3 -18"
+animation="property: rotation;
+             to: 180 300 100;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="@bulbtheera"
+size ="50px"
+color="yellow"
+position="-22 23 -38"
+animation="property: rotation;
+             to: 380 200 100;
+             dur: 15000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="Ranking"
+size ="50px"
+color="yellow"
+position="32 -23 -38"
+animation="property: rotation;
+             to: 80 200 100;
+             dur: 19000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="MACHT"
+size ="50px"
+color="yellow"
+position="20 -20 -38"
+animation="property: rotation;
+             to: 180 200 300;
+             dur: 17000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+<a-text
+value="DISCOmbulation"
+size ="50px"
+color="yellow"
+position="-38 -20 -12"
+animation="property: rotation;
+             to: 40 200 300;
+             dur: 13000;
+             easing: linear;
+             loop: true;"
+</a-text>
+
+
+
+
+
+
+
+
+
+<a-sky color="black"></a-sky>
+
+    </a-scene>
+  </body>
+</html>
